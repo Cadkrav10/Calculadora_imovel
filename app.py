@@ -1,5 +1,5 @@
 import streamlit as st
-import pickle as pk
+import pickle
 #import 
 
 # Título do aplicativo
@@ -13,9 +13,9 @@ st.title('Quanto custa sua casa ?')
 #    st.write('O botão foi clicado!')
 
 filename = 'modelo_treinado.sav'
-modelo_treinado = pk.load(open(filename, 'rb'))
+modelo_treinado = pickle.load(open(filename, 'rb'))
 
-scaler = pk.load(open('scaler.pkl', 'rb'))
+scaler = pickle.load(open('scaler.pkl', 'rb'))
 
 col1, col2 = st.columns(2)
 with col1:
