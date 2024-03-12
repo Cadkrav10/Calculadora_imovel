@@ -12,8 +12,8 @@ st.title('Quanto custa sua casa ?')
 #if button:
 #    st.write('O botão foi clicado!')
 
-filename = 'modelo_treinado.sav'
-modelo_treinado = pickle.load(open(filename, 'rb'))
+#filename = 'modelo_treinado.sav'
+modelo_treinado = pickle.load(open('modelo_treinado.sav', 'rb'))
 
 scaler = pickle.load(open('scaler.pkl', 'rb'))
 
